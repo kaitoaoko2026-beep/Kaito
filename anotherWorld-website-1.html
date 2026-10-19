@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173b25">
+<title>anotherWorld | Bedrock SMP</title>
+<style>
+:root{--green:#74e66b;--dark:#102016;--panel:#1a3021;--muted:#c5d7c7}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:linear-gradient(180deg,#102016,#182d20 55%,#0c1710);color:#f4fff4}
+header{padding:18px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff20}
+.brand{font-weight:900;font-size:1.25rem;letter-spacing:.4px}.brand span{color:var(--green)}
+.pill{border:1px solid #74e66b70;border-radius:999px;padding:7px 12px;color:var(--green);font-size:.82rem}
+main{max-width:960px;margin:auto;padding:56px 20px}
+.hero{text-align:center;padding:28px 0 44px}
+.eyebrow{color:var(--green);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.8rem,9vw,5.7rem);line-height:.98;margin:14px 0;text-shadow:0 5px 0 #0005;letter-spacing:-2px}
+h1 span{color:var(--green)}.intro{max-width:600px;margin:18px auto;color:var(--muted);font-size:1.08rem;line-height:1.7}
+.btn{display:inline-block;border:0;border-radius:12px;background:var(--green);color:#102016;padding:13px 20px;font-weight:900;text-decoration:none;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:24px 0}
+.card{background:#1a3021;border:1px solid #ffffff1c;border-radius:18px;padding:22px}
+.card .emoji{font-size:1.8rem}.card h2{margin:8px 0;font-size:1.18rem}.card p{color:var(--muted);line-height:1.6;margin-bottom:0}
+h2.section{font-size:1.7rem;margin-top:42px}
+.connect{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#0c1710;padding:14px;border-radius:12px;margin-top:12px}
+code{overflow-wrap:anywhere;color:var(--green)}button.copy{background:#e7f5e8;color:#102016;border:0;border-radius:8px;padding:9px 12px;font-weight:800}
+.note{font-size:.9rem;color:var(--muted);line-height:1.6}footer{text-align:center;padding:28px;color:#a7b9a9;border-top:1px solid #ffffff18;font-size:.85rem}
+</style>
+</head>
+<body>
+<header><div class="brand">🌍 another<span>World</span></div><div class="pill">BEDROCK SMP · FRIENDS</div></header>
+<main>
+<section class="hero">
+<div class="eyebrow">Your next adventure starts here</div>
+<h1>Welcome to<br><span>anotherWorld</span></h1>
+<p class="intro">A friendly Minecraft Bedrock survival world. Gather resources, build your home, explore together, and make your own story.</p>
+<a class="btn" href="#join">How to join ↓</a>
+</section>
+<div class="grid">
+<article class="card"><div class="emoji">🌲</div><h2>Survival SMP</h2><p>Collect resources, explore, build a base, and grow your world together.</p></article>
+<article class="card"><div class="emoji">🤝</div><h2>Friends first</h2><p>This server is intended for invited friends. Share the address only with people you trust.</p></article>
+<article class="card"><div class="emoji">🛡️</div><h2>Play fair</h2><p>No stealing, griefing, cheating, or bullying. Respect everyone’s builds.</p></article>
+</div>
+<h2 class="section" id="join">🎮 Join anotherWorld</h2>
+<div class="card">
+<p>Ask the server owner for the current server address and port, then add them in Minecraft Bedrock.</p>
+<div class="connect"><div><strong>Server Address</strong><br><code>ADD-YOUR-SERVER-ADDRESS</code></div><button class="copy" onclick="copyText('ADD-YOUR-SERVER-ADDRESS')">Copy address</button></div>
+<div class="connect"><div><strong>Port</strong><br><code>ADD-PORT</code></div><button class="copy" onclick="copyText('ADD-PORT')">Copy port</button></div>
+<p class="note">The address and port above are placeholders. Replace them with the real details shown in your server host panel before sharing this page.</p>
+</div>
+<h2 class="section">📜 Server rules</h2>
+<div class="card"><p>1. Be kind to other players.<br>2. Do not steal or destroy other players’ builds.<br>3. No cheats or exploits.<br>4. Ask before taking someone else’s items.<br>5. Listen to the server owner and moderators.</p></div>
+</main>
+<footer>anotherWorld · Unofficial fan-made Minecraft community page. Not affiliated with Mojang or Microsoft.</footer>
+<script>
+function copyText(t){if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(()=>alert('Copied! Replace placeholders with your real server details.')).catch(()=>prompt('Copy this text:',t));}else{prompt('Copy this text:',t);}}
+</script>
+</body>
+</html>
